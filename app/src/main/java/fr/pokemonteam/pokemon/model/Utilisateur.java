@@ -1,6 +1,10 @@
 package fr.pokemonteam.pokemon.model;
 
+import android.content.Context;
+
 import java.util.ArrayList;
+
+import fr.pokemonteam.pokemon.bdd.Database;
 
 /**
  * Created by Tristan on 04/01/16.
@@ -11,10 +15,11 @@ public class Utilisateur {
     String nom;
     String prenom;
     ArrayList<PokemonReel> equipe = new ArrayList<>();
-    ArrayList<Element> sacADos = new ArrayList<>();
+    ArrayList<ElementSac> sacADos = new ArrayList<>();
     ArrayList<Lieu> lieuxFavoris = new ArrayList<>();
 
-    public Utilisateur(int id, String pseudo, String nom, String prenom, ArrayList<PokemonReel> equipe, ArrayList<Element> sacADos, ArrayList<Lieu> lieuxFavoris) {
+
+    private Utilisateur(int id, String pseudo, String nom, String prenom, ArrayList<PokemonReel> equipe, ArrayList<ElementSac> sacADos, ArrayList<Lieu> lieuxFavoris) {
         this.id = id;
         this.pseudo = pseudo;
         this.nom = nom;
@@ -22,6 +27,11 @@ public class Utilisateur {
         this.equipe = equipe;
         this.sacADos = sacADos;
         this.lieuxFavoris = lieuxFavoris;
+    }
+
+    public Utilisateur(Context context) {
+        Database db = Database.getInstance(context);
+        db.getUser(1);
     }
 
     public int getId() {
@@ -64,11 +74,11 @@ public class Utilisateur {
         this.equipe = equipe;
     }
 
-    public ArrayList<Element> getSacADos() {
+    public ArrayList<ElementSac> getSacADos() {
         return sacADos;
     }
 
-    public void setSacADos(ArrayList<Element> sacADos) {
+    public void setSacADos(ArrayList<ElementSac> sacADos) {
         this.sacADos = sacADos;
     }
 

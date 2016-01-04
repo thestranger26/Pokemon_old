@@ -6,6 +6,15 @@ package fr.pokemonteam.pokemon.model;
 public class Element {
     int id;
     String libelle;
+    String effet;
+
+    public String getEffet() {
+        return effet;
+    }
+
+    public void setEffet(String effet) {
+        this.effet = effet;
+    }
 
     public Element(int id, String libelle) {
         this.id = id;
