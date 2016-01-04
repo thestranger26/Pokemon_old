@@ -3,7 +3,7 @@ package fr.pokemonteam.pokemon.model;
 /**
  * Created by Tristan on 04/01/16.
  */
-public class Pokemon_reel {
+public class PokemonReel {
     Pokemon pokemon;
     String pseudo;
     int atk;
@@ -13,7 +13,7 @@ public class Pokemon_reel {
     long latitude;
     long longitude;
 
-    public Pokemon_reel(Pokemon pokemon, String pseudo, int atk, int def, int niveau, int exp, long latitude, long longitude) {
+    public PokemonReel(Pokemon pokemon, String pseudo, int atk, int def, int niveau, int exp, long latitude, long longitude) {
         this.pokemon = pokemon;
         this.pseudo = pseudo;
         this.atk = atk;

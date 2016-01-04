@@ -7,15 +7,15 @@ public class Pokemon {
     int id;
     String nom;
     String description;
-    String lien_image;
+    String lienImage;
     Boolean vue;
     Boolean capture;
 
-    public Pokemon(int id, String nom, String description, String lien_image, Boolean vue, Boolean capture) {
+    public Pokemon(int id, String nom, String description, String lienImage, Boolean vue, Boolean capture) {
         this.id = id;
         this.nom = nom;
         this.description = description;
-        this.lien_image = lien_image;
+        this.lienImage = lienImage;
         this.vue = vue;
         this.capture = capture;
     }
@@ -44,12 +44,12 @@ public class Pokemon {
         this.description = description;
     }
 
-    public String getLien_image() {
-        return lien_image;
+    public String getLienImage() {
+        return lienImage;
     }
 
-    public void setLien_image(String lien_image) {
-        this.lien_image = lien_image;
+    public void setLienImage(String lienImage) {
+        this.lienImage = lienImage;
     }
 
     public Boolean getVue() {

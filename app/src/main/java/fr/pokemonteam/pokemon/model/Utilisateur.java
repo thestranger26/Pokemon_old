@@ -10,18 +10,18 @@ public class Utilisateur {
     String pseudo;
     String nom;
     String prenom;
-    ArrayList<Pokemon_reel> equipe = new ArrayList<>();
-    ArrayList<Element> sac_a_dos = new ArrayList<>();
-    ArrayList<Lieu> lieux_favoris = new ArrayList<>();
+    ArrayList<PokemonReel> equipe = new ArrayList<>();
+    ArrayList<Element> sacADos = new ArrayList<>();
+    ArrayList<Lieu> lieuxFavoris = new ArrayList<>();
 
-    public Utilisateur(int id, String pseudo, String nom, String prenom, ArrayList<Pokemon_reel> equipe, ArrayList<Element> sac_a_dos, ArrayList<Lieu> lieux_favoris) {
+    public Utilisateur(int id, String pseudo, String nom, String prenom, ArrayList<PokemonReel> equipe, ArrayList<Element> sacADos, ArrayList<Lieu> lieuxFavoris) {
         this.id = id;
         this.pseudo = pseudo;
         this.nom = nom;
         this.prenom = prenom;
         this.equipe = equipe;
-        this.sac_a_dos = sac_a_dos;
-        this.lieux_favoris = lieux_favoris;
+        this.sacADos = sacADos;
+        this.lieuxFavoris = lieuxFavoris;
     }
 
     public int getId() {
@@ -56,27 +56,27 @@ public class Utilisateur {
         this.prenom = prenom;
     }
 
-    public ArrayList<Pokemon_reel> getEquipe() {
+    public ArrayList<PokemonReel> getEquipe() {
         return equipe;
     }
 
-    public void setEquipe(ArrayList<Pokemon_reel> equipe) {
+    public void setEquipe(ArrayList<PokemonReel> equipe) {
         this.equipe = equipe;
     }
 
-    public ArrayList<Element> getSac_a_dos() {
-        return sac_a_dos;
+    public ArrayList<Element> getSacADos() {
+        return sacADos;
     }
 
-    public void setSac_a_dos(ArrayList<Element> sac_a_dos) {
-        this.sac_a_dos = sac_a_dos;
+    public void setSacADos(ArrayList<Element> sacADos) {
+        this.sacADos = sacADos;
     }
 
-    public ArrayList<Lieu> getLieux_favoris() {
-        return lieux_favoris;
+    public ArrayList<Lieu> getLieuxFavoris() {
+        return lieuxFavoris;
     }
 
-    public void setLieux_favoris(ArrayList<Lieu> lieux_favoris) {
-        this.lieux_favoris = lieux_favoris;
+    public void setLieuxFavoris(ArrayList<Lieu> lieuxFavoris) {
+        this.lieuxFavoris = lieuxFavoris;
     }
 }

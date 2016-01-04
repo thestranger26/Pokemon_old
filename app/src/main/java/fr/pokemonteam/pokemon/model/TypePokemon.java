@@ -3,11 +3,11 @@ package fr.pokemonteam.pokemon.model;
 /**
  * Created by Tristan on 04/01/16.
  */
-public class Type_pokemon {
+public class TypePokemon {
     int id;
     String libelle;
 
-    public Type_pokemon(int id, String libelle) {
+    public TypePokemon(int id, String libelle) {
         this.id = id;
         this.libelle = libelle;
     }
