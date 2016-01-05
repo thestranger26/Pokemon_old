@@ -1,6 +1,15 @@
 *.iml
 .idea
 .gradle
+/.idea/compiler.xml   
+/.idea/gradle.xml  
+/.idea/modules.xml
+/.idea/copyright      
+/.idea/libraries   
+/.idea/runConfigurations.xml
+/.idea/encodings.xml  
+/.idea/misc.xml    
+/.idea/workspace.xml
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
